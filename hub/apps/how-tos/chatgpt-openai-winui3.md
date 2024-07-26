@@ -22,7 +22,7 @@ In this how-to, you'll learn how to integrate OpenAI's API into your WinUI 3 / W
 
 ## Prerequisites
 
-- [Visual Studio 2022 and Tools for Windows App SDK](../windows-app-sdk/set-up-your-development-environment.md)
+- Set up your development computer (see [Get started with WinUI](../get-started/start-here.md)).
 - Familiarity with the core concepts in *[How to build a Hello World app using C# and WinUI 3 / Windows App SDK](./hello-world-winui3.md)* - we'll build upon that how-to in this one.
 - An OpenAI API key from your [OpenAI developer dashboard](https://platform.openai.com/api-keys).
 - An OpenAI SDK installed in your project. Refer to the [OpenAI documentation](https://platform.openai.com/docs/libraries) for a list of community libraries. In this how-to, we'll use [betalgo/openai](https://github.com/betalgo/openai).
@@ -376,7 +376,7 @@ Here's what you accomplished in this how-to:
     3. adding a `ProgressBar` to indicate when the app is waiting for a response from the GPT API,
     4. centering the `StackPanel` in the window,
     5. ensuring that messages wrap to the next line when they reach the edge of the window, and
-    6. making the `TextBox` larger, resizeable, and responsive to the `Enter` key.
+    6. making the `TextBox` larger, resizable, and responsive to the `Enter` key.
 
 
 

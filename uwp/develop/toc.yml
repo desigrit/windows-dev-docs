@@ -71,6 +71,8 @@
           href: ../audio-video-camera/get-a-preview-frame.md
         - name: Launch the camera settings page
           href: ../audio-video-camera/launch-camera-settings.md
+        - name: Handle the Windows camera privacy setting
+          href: ../audio-video-camera/camera-privacy-setting.md
     - name: Media playback
       href: ../audio-video-camera/media-playback.md
       items:
@@ -1049,12 +1051,12 @@
             - name: Fingerprint biometrics
               href: ../security/fingerprint-biometrics.md
             - name: Windows Hello
-              href: ../security/microsoft-passport.md
+              href: /windows/apps/develop/security/windows-hello
               items:
                 - name: Create a Windows Hello login app
-                  href: ../security/microsoft-passport-login.md
+                  href: /windows/apps/develop/security/windows-hello-login
                 - name: Create a Windows Hello login service
-                  href: ../security/microsoft-passport-login-auth-service.md
+                  href: /windows/apps/develop/security/windows-hello-auth-service
             - name: Smart cards
               href: ../security/smart-cards.md
             - name: Shared certificates
@@ -1168,8 +1170,6 @@
           href: ../winrt-components/walkthrough-creating-a-simple-windows-runtime-component-and-calling-it-from-javascript.md
         - name: Raising events in Windows Runtime components
           href: ../winrt-components/raising-events-in-windows-runtime-components.md
-        - name: Brokered Windows Runtime components for side-loaded UWP apps
-          href: ../winrt-components/brokered-windows-runtime-components-for-side-loaded-windows-store-apps.md
     - name: XAML platform
       href: ../xaml-platform/index.md
       items:
@@ -1495,4 +1495,6 @@
   href: ../ui-input/index.md
   items:
     - name: Title bar customization
-      href: ../ui-input/title-bar.md      
+      href: ../ui-input/title-bar.md
+    - name: Use Mica in UWP apps
+      href: ../ui-input/mica-uwp.md    

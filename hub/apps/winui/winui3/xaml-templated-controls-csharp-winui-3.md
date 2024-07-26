@@ -1,9 +1,9 @@
 ---
 description: This article walks you through creating a XAML templated control for WinUI 3 with C#.
 title: Build XAML controls with C#
-ms.date: 03/05/2021
+ms.date: 07/09/2024
 ms.topic: article
-keywords: windows 10, windows 11, Windows App SDK, Windows app development platform, desktop development, win32, WinRT, uwp, toolkit sdk, winui, Windows UI Library, custom control, templated control
+keywords: windows 10, windows 11, Windows App SDK, Windows app development platform, desktop development, win32, WinRT, uwp, toolkit sdk, winui, custom control, templated control
 ms.author: drewbat
 author: drewbatgit
 ms.localizationpriority: high
@@ -80,6 +80,7 @@ private static void OnLabelChanged(DependencyObject d, DependencyPropertyChanged
     }
 }
 ```
+
 For more information on how dependency properties work, see [Dependency properties overview](/windows/uwp/xaml-platform/dependency-properties-overview).
 
 ## Define the default style for BgLabelControl

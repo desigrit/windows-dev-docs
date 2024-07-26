@@ -35,6 +35,9 @@ All of the capture methods described in this article require the first step of i
 
 :::code language="csharp" source="~/../snippets-windows/windows-uwp/audio-video-camera/SimpleCameraPreview_Win10/cs/MainPage.xaml.cs" id="SnippetInitMediaCapture":::
 
+> [!NOTE]
+> Windows allows users to grant or deny access to the device's camera in the Windows Settings app, under **Privacy & Security -> Camera**. When initializing the capture device, apps should check whether they have access to the camera and handle the case where access is denied by the user. For more information, see [Handle the Windows camera privacy setting](/windows/uwp/audio-video-camera/camera-privacy-setting).
+
 ## Set up the camera preview
 It's possible to capture photos, videos, and audio using **MediaCapture** without showing the camera preview, but typically you want to show the preview stream so that the user can see what's being captured. Also, a few **MediaCapture** features require the preview stream to be running before they can be enabled, including auto focus, auto exposure, and auto white balance. To see how to set up the camera preview, see [**Display the camera preview**](simple-camera-preview-access.md).
 
@@ -57,7 +60,7 @@ Starting with Windows 10, version 1803, you can get the metadata, such as EXIF i
 frame control values, such as exposure and flash settings, used when the image was captured by accessing the [**ControlValues**](/uwp/api/windows.media.capture.capturedframe.controlvalues) property. For more information, see [Capture device controls for photo and video capture](capture-device-controls-for-photo-and-video-capture.md).
 
 ## Capture a photo to a file
-A typical photography app will save a captured photo to disk or to cloud storage and will need to add metadata, such as photo orientation, to the file. The following example shows you how to capture an photo to a file. You still have the option of creating a **SoftwareBitmap** from the image file later. 
+A typical photography app will save a captured photo to disk or to cloud storage and will need to add metadata, such as photo orientation, to the file. The following example shows you how to capture a photo to a file. You still have the option of creating a **SoftwareBitmap** from the image file later. 
 
 The technique shown in this example captures the photo to an in-memory stream and then transcode the photo from the stream to a file on disk. This example uses [**GetLibraryAsync**](/uwp/api/windows.storage.storagelibrary.getlibraryasync) to get the user's pictures library and then the [**SaveFolder**](/uwp/api/windows.storage.storagelibrary.savefolder) property to get a reference default save folder. Remember to add the **Pictures Library** capability to your app manifest to access this folder. [**CreateFileAsync**](/uwp/api/windows.storage.storagefolder.createfileasync) creates a new [**StorageFile**](/uwp/api/Windows.Storage.StorageFile) to which the photo will be saved.
 

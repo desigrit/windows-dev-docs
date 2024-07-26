@@ -39,7 +39,7 @@ You can choose the following Awake states:
 
 While PowerToys Awake can keep the computer awake indefinitely or temporarily, in its default state the displays connected to the machine will turn off. If you need the displays to be available, use the **Keep screen on** switch, which will keep displays active.
 
-This feature only works if Awake is running in one of the three **Keep awake** states. It does not survive a computer restart.
+This feature only works if Awake is running in one of the three **Keep awake** states. It does not survive a computer restart. It also does not prevent any user-initiated actions, such as manually putting the computer to sleep or hibernating it.
 
 ## System tray
 
@@ -73,3 +73,5 @@ When setting the value for the `--expire-at` parameter, these formats will be ac
 
 - `PowerToys.Awake.exe --expire-at=17:00:00` will expire at 5PM of the current day
 - `PowerToys.Awake.exe --expire-at="4/13/2023 17:00:00"` will expire at 5PM on April 13 2023
+
+[!INCLUDE [install-powertoys.md](../includes/install-powertoys.md)]
